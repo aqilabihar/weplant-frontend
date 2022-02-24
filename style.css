@@ -1,0 +1,135 @@
+body {
+    grid-row: inherit;
+}
+
+header {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    background: linear-gradient(100.05deg, #008539 36.77%, #209C55 69.63%);
+}
+
+.body-content {
+    background-color: #fff;
+    z-index: 1;
+    position: relative;
+    top: -20px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid magenta;
+}
+
+.navbar {
+    padding: 20px 0;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    text-transform: normal;
+    font-size: 2em;
+    color: #fff !important;
+}
+
+.nav-item {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-item.active .nav-link {
+    background: #262626;
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navbar-light .navbar-nav .nav-item.active .nav-link {
+    background: #262626;
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link {
+    color: #fff;
+    padding: 5px 15px;
+}
+
+.banner {
+    position: relative;
+    /* background-color: #168652; */
+    min-height: 750px;
+    background-size: cover;
+    display: flex;
+    text-align: left;
+    background-position: left;
+    /* padding: 148px 0 100px; */
+}
+
+.btnD1 {
+    display: inline-block;
+    margin: 1em 0 0;
+    background: #ff2670;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 800;
+}
+
+.banner-content {
+    padding-top: 90px;
+    display: flex;
+}
+
+.banner-content p {
+    position: relative;
+    width: 632px !important;
+    height: 170px !important;
+    left: auto;
+    top: auto;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 100%;
+    /* or 85px */
+    text-align: left;
+    color: #FAFAFA;
+}
+
+.btnD1:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.content-area {
+    width: 100%;
+    padding-top: 282px;
+    padding-bottom: 282px;
+    /* padding-left: 75px; */
+    height: auto;
+    display: flex;
+    position: relative;
+    background: rgb(255, 0, 0);
+}
+
+.content-text {
+    padding-left: 90px;
+}
+
+.content-text h1 {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 75px;
+}
+
+footer {
+    position: absolute;
+    /* bottom: 0; */
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    background: linear-gradient(100.05deg, #008539 36.77%, #209C55 69.63%);
+}
