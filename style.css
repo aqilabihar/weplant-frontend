@@ -23,7 +23,6 @@ img {
 
 .container {
     width: 90%;
-    margin: 0 auto;
     /* border: 2px solid magenta; */
 }
 
@@ -140,19 +139,26 @@ img {
     text-decoration: none;
 }
 
+.content {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+}
+
 .content-area {
     width: 100%;
     padding-top: 282px;
     padding-bottom: 282px;
     /* padding-left: 75px; */
     height: auto;
-    display: grid;
+    display: flex;
     position: relative;
     /* background: rgb(255, 0, 0); */
 }
 
 .content-img {
-    float: left;
+    width: 463px;
+    height: 446px;
 }
 
 content .content-text {
@@ -163,12 +169,23 @@ content .content-text {
     font-family: Work Sans;
     font-style: normal;
     font-weight: 600;
-    font-size: 60px;
+    font-size: 4em;
     line-height: 75px;
 }
 
 .content-text p {
     font-size: 1.7em;
+}
+
+.download-area {
+    padding-top: 50px;
+    display: flex;
+}
+
+.download-area img {
+    width: auto;
+    height: auto;
+    cursor: pointer;
 }
 
 .red-tittle {
@@ -210,4 +227,25 @@ footer {
 .brand {
     width: 207px;
     height: 63px;
+}
+
+@media (max-width: 1040px) {
+    .banner-content img {
+        display: none;
+    }
+    .content {
+        grid-template-columns: 1fr;
+    }
+    .content-img {
+        justify-content: center;
+    }
+    .content-text {
+        text-align: center;
+    }
+    .content-text h1 {
+        font-size: 2em;
+    }
+    .content-text br {
+        display: none;
+    }
 }
