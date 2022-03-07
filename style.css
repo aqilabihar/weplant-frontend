@@ -1,5 +1,6 @@
 body {
     grid-row: inherit;
+    overflow-x: hidden;
 }
 
 header {
@@ -71,6 +72,7 @@ img {
 
 .Bbutton {
     display: flex;
+    pointer-events: painted;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -178,6 +180,34 @@ footer {
     /* bottom: 0; */
     height: auto;
     width: 100%;
-    padding-top: 40px;
+    padding-bottom: 367px;
     background: linear-gradient(100.05deg, #008539 36.77%, #209C55 69.63%);
+}
+
+.menu-footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.menu-footer ul {
+    display: grid;
+    list-style: none;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.menu-footer a {
+    text-align: center;
+    color: rgb(238, 238, 238);
+    text-decoration: none;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 44px;
+}
+
+.brand {
+    width: 207px;
+    height: 63px;
 }
