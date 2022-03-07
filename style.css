@@ -9,6 +9,10 @@ header {
     background: linear-gradient(100.05deg, #008539 36.77%, #209C55 69.63%);
 }
 
+img {
+    width: 100%;
+}
+
 .body-content {
     background-color: #fff;
     z-index: 1;
@@ -65,6 +69,22 @@ header {
     /* padding: 148px 0 100px; */
 }
 
+.Bbutton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    width: 307px;
+    height: 56px;
+    left: 73px;
+    top: 590px;
+    /* Orange */
+    background: #F2994A;
+    border-radius: 5px;
+    color: white;
+}
+
 .btnD1 {
     display: inline-block;
     margin: 1em 0 0;
@@ -81,7 +101,23 @@ header {
     display: flex;
 }
 
-.banner-content p {
+.desc {
+    position: relative;
+    width: 632px !important;
+    height: 170px !important;
+    left: auto;
+    top: auto;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100%;
+    /* or 85px */
+    text-align: left;
+    color: #FAFAFA;
+}
+
+.title {
     position: relative;
     width: 632px !important;
     height: 170px !important;
@@ -108,12 +144,16 @@ header {
     padding-bottom: 282px;
     /* padding-left: 75px; */
     height: auto;
-    display: flex;
+    display: grid;
     position: relative;
-    background: rgb(255, 0, 0);
+    /* background: rgb(255, 0, 0); */
 }
 
-.content-text {
+.content-img {
+    float: left;
+}
+
+content .content-text {
     padding-left: 90px;
 }
 
@@ -121,8 +161,16 @@ header {
     font-family: Work Sans;
     font-style: normal;
     font-weight: 600;
-    font-size: 64px;
+    font-size: 60px;
     line-height: 75px;
+}
+
+.content-text p {
+    font-size: 1.7em;
+}
+
+.red-tittle {
+    color: #008539;
 }
 
 footer {
