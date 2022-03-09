@@ -23,7 +23,8 @@ img {
 
 .container {
     width: 90%;
-    /* border: 2px solid magenta; */
+    display: block;
+    border: 2px solid magenta;
 }
 
 .navbar {
@@ -111,7 +112,7 @@ img {
     font-family: Work Sans;
     font-style: normal;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 1.9em;
     line-height: 100%;
     /* or 85px */
     text-align: left;
@@ -157,8 +158,11 @@ img {
 }
 
 .content-img {
-    width: 463px;
-    height: 446px;
+    width: 295px;
+}
+
+.content-img img {
+    width: fit-content;
 }
 
 .content-text {
@@ -169,12 +173,12 @@ img {
     font-family: Work Sans;
     font-style: normal;
     font-weight: 600;
-    font-size: 4em;
+    font-size: 4vw;
     line-height: 75px;
 }
 
 .content-text p {
-    font-size: 1.7em;
+    font-size: 1.7vw;
 }
 
 .download-area {
@@ -183,8 +187,7 @@ img {
 }
 
 .download-area img {
-    width: auto;
-    height: auto;
+    padding: 20px;
     cursor: pointer;
 }
 
@@ -234,18 +237,29 @@ footer {
         display: none;
     }
     .content {
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
     }
     .content-img {
+        width: 100%;
         justify-content: center;
     }
+    img.content-img {
+        width: fit-content;
+    }
     .content-text {
+        padding: 0;
         text-align: center;
     }
     .content-text h1 {
-        font-size: 2em;
+        font-size: 4.05vw;
     }
     .content-text br {
         display: none;
+    }
+}
+
+@media(max-width: 600px) {
+    body {
+        font-size: 10px;
     }
 }
