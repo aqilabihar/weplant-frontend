@@ -24,7 +24,7 @@ img {
 .container {
     width: 90%;
     display: block;
-    border: 2px solid magenta;
+    /* border: 2px solid magenta; */
 }
 
 .navbar {
