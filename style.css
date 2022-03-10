@@ -5,7 +5,7 @@ body {
 
 header {
     position: relative;
-    z-index: 10;
+    /* z-index: 10; */
     width: 100%;
     background: linear-gradient(100.05deg, #008539 36.77%, #209C55 69.63%);
 }
@@ -21,13 +21,17 @@ img {
     top: -20px;
 }
 
-.container {
+
+/* .container {
     width: 90%;
     display: block;
     /* border: 2px solid magenta; */
-}
 
-.navbar {
+
+/* 
+} */
+
+*/ .navbar {
     padding: 20px 0;
 }
 
@@ -138,6 +142,47 @@ img {
 .btnD1:hover {
     color: #fff;
     text-decoration: none;
+}
+
+.feature-area {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0;
+}
+
+.f-img {
+    padding: 2px;
+    text-align: center;
+}
+
+.f-img img {
+    width: 30vw;
+}
+
+.f-img h4 {
+    font-size: 2vw;
+}
+
+.f-img p {
+    font-size: 1.2vw;
+}
+
+.feature-offer {
+    display: grid;
+    grid-template-columns: 60% auto;
+    grid-gap: 10px;
+    align-items: center;
+    /* background-color: #2196F3; */
+}
+
+.feature-offer img {
+    width: 100%;
+    height: 100%;
+}
+
+.item1 {
+    height: fit-content;
+    grid-row: 1 / span 2;
 }
 
 .content {
